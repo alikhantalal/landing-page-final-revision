@@ -1,7 +1,6 @@
 /* QuickSignage LinkedIn Landing Page Styles - Lead Optimized */
 
-.quicksignage-landing {
-    /* CSS Variables */
+:root {
     --primary-color: #00b894;
     --primary-dark: #00a085;
     --secondary-color: #0984e3;
@@ -22,17 +21,17 @@
     box-sizing: border-box;
 }
 
-.quicksignage-landing html {
-    scroll-behavior: smooth;
-    scroll-padding-top: var(--navbar-height);
-}
-
-.quicksignage-landing body {
+.quicksignage-landing {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
     color: var(--dark-color);
     background-color: var(--white);
     overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--navbar-height);
 }
 
 /* Typography */
@@ -1128,7 +1127,7 @@
         transition-duration: 0.01ms !important;
     }
     
-    .quicksignage-landing html {
+    html {
         scroll-behavior: auto;
     }
 }
