@@ -15,12 +15,6 @@
     --navbar-height: 80px;
 }
 
-.quicksignage-landing * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .quicksignage-landing {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
@@ -29,27 +23,31 @@
     overflow-x: hidden;
 }
 
+.quicksignage-landing * {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--navbar-height);
 }
 
 /* Typography */
-.quicksignage-landing .section-title {
+.section-title {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--dark-color);
     margin-bottom: 1rem;
 }
 
-.quicksignage-landing .section-subtitle {
+.section-subtitle {
     font-size: 1.125rem;
     color: var(--text-muted);
     max-width: 600px;
     margin: 0 auto;
 }
 
-.quicksignage-landing .text-gradient {
+.text-gradient {
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -57,7 +55,7 @@ html {
 }
 
 /* Buttons */
-.quicksignage-landing .btn-primary {
+.btn-primary {
     background: var(--gradient);
     border: none;
     font-weight: 600;
@@ -67,18 +65,18 @@ html {
     box-shadow: 0 4px 15px rgba(0, 184, 148, 0.3);
 }
 
-.quicksignage-landing .btn-primary:hover {
+.btn-primary:hover {
     transform: translateY(-1px);
     box-shadow: 0 6px 20px rgba(0, 184, 148, 0.4);
     background: linear-gradient(135deg, var(--primary-dark), var(--secondary-color));
 }
 
-.quicksignage-landing .btn-cta {
+.btn-cta {
     font-size: 1.1rem;
     padding: 1rem 2.5rem;
 }
 
-.quicksignage-landing .btn-outline-light {
+.btn-outline-light {
     border: 2px solid rgba(255, 255, 255, 0.3);
     color: var(--white);
     font-weight: 600;
@@ -87,7 +85,7 @@ html {
     transition: all 0.2s ease;
 }
 
-.quicksignage-landing .btn-outline-light:hover {
+.btn-outline-light:hover {
     background: var(--white);
     color: var(--primary-color);
     border-color: var(--white);
@@ -95,7 +93,7 @@ html {
 }
 
 /* Navigation */
-.quicksignage-landing .navbar {
+.navbar {
     background: rgba(45, 52, 54, 0.95) !important;
     backdrop-filter: blur(10px);
     padding: 1rem 0;
@@ -104,13 +102,13 @@ html {
     z-index: 1000;
 }
 
-.quicksignage-landing .navbar.scrolled {
+.navbar.scrolled {
     background: var(--dark-color) !important;
     box-shadow: var(--shadow-lg);
     padding: 0.75rem 0;
 }
 
-.quicksignage-landing .nav-link {
+.nav-link {
     color: rgba(255, 255, 255, 0.9) !important;
     font-weight: 500;
     margin: 0 0.5rem;
@@ -118,11 +116,11 @@ html {
     position: relative;
 }
 
-.quicksignage-landing .nav-link:hover {
+.nav-link:hover {
     color: var(--primary-color) !important;
 }
 
-.quicksignage-landing .nav-link::after {
+.nav-link::after {
     content: '';
     position: absolute;
     width: 0;
@@ -134,12 +132,12 @@ html {
     transform: translateX(-50%);
 }
 
-.quicksignage-landing .nav-link:hover::after {
+.nav-link:hover::after {
     width: 100%;
 }
 
 /* Modal Styles */
-.quicksignage-landing .modal-content {
+.modal-content {
     border-radius: 20px;
     border: none;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -147,34 +145,34 @@ html {
     overflow-y: auto;
 }
 
-.quicksignage-landing .modal-header {
+.modal-header {
     border-bottom: 1px solid var(--border-color);
     padding: 1.5rem 2rem 1rem;
 }
 
-.quicksignage-landing .modal-title-container {
+.modal-title-container {
     flex: 1;
 }
 
-.quicksignage-landing .modal-title {
+.modal-title {
     color: var(--dark-color);
     font-weight: 700;
     margin-bottom: 0.5rem;
     font-size: 1.4rem;
 }
 
-.quicksignage-landing .modal-subtitle {
+.modal-subtitle {
     color: var(--text-muted);
     margin: 0;
     font-size: 0.95rem;
 }
 
-.quicksignage-landing .modal-body {
+.modal-body {
     padding: 1rem 2rem 1.5rem;
 }
 
-.quicksignage-landing .quote-form .form-control,
-.quicksignage-landing .quote-form .form-select {
+.quote-form .form-control,
+.quote-form .form-select {
     border-radius: 10px;
     border: 2px solid var(--border-color);
     padding: 0.65rem 1rem;
@@ -182,43 +180,43 @@ html {
     font-size: 0.9rem;
 }
 
-.quicksignage-landing .quote-form .form-control:focus,
-.quicksignage-landing .quote-form .form-select:focus {
+.quote-form .form-control:focus,
+.quote-form .form-select:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 0.2rem rgba(0, 184, 148, 0.25);
 }
 
-.quicksignage-landing .quote-form .form-label {
+.quote-form .form-label {
     font-weight: 600;
     color: var(--dark-color);
     margin-bottom: 0.4rem;
     font-size: 0.85rem;
 }
 
-.quicksignage-landing .quote-form .mb-3 {
+.quote-form .mb-3 {
     margin-bottom: 1rem !important;
 }
 
-.quicksignage-landing .quote-form .mb-4 {
+.quote-form .mb-4 {
     margin-bottom: 1.25rem !important;
 }
 
 /* Modal Benefits Section */
-.quicksignage-landing .modal-benefits {
+.modal-benefits {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border-radius: 15px;
     padding: 1.5rem;
     height: 100%;
 }
 
-.quicksignage-landing .benefits-title {
+.benefits-title {
     color: var(--dark-color);
     font-weight: 700;
     margin-bottom: 1.25rem;
     font-size: 1.1rem;
 }
 
-.quicksignage-landing .benefit-item {
+.benefit-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 1rem;
@@ -229,12 +227,12 @@ html {
     transition: all 0.2s ease;
 }
 
-.quicksignage-landing .benefit-item:hover {
+.benefit-item:hover {
     transform: translateY(-1px);
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
 }
 
-.quicksignage-landing .benefit-item .benefit-icon {
+.benefit-item .benefit-icon {
     width: 32px;
     height: 32px;
     background: var(--gradient);
@@ -246,26 +244,26 @@ html {
     flex-shrink: 0;
 }
 
-.quicksignage-landing .benefit-item .benefit-icon i {
+.benefit-item .benefit-icon i {
     color: var(--white);
     font-size: 0.85rem;
 }
 
-.quicksignage-landing .benefit-content h6 {
+.benefit-content h6 {
     color: var(--dark-color);
     font-weight: 600;
     margin-bottom: 0.2rem;
     font-size: 0.85rem;
 }
 
-.quicksignage-landing .benefit-content p {
+.benefit-content p {
     color: var(--text-muted);
     margin: 0;
     font-size: 0.75rem;
     line-height: 1.3;
 }
 
-.quicksignage-landing .guarantee-badge {
+.guarantee-badge {
     background: var(--gradient);
     color: var(--white);
     padding: 1rem;
@@ -276,7 +274,7 @@ html {
     box-shadow: 0 3px 12px rgba(0, 184, 148, 0.3);
 }
 
-.quicksignage-landing .guarantee-icon {
+.guarantee-icon {
     width: 32px;
     height: 32px;
     background: rgba(255, 255, 255, 0.2);
@@ -288,23 +286,23 @@ html {
     flex-shrink: 0;
 }
 
-.quicksignage-landing .guarantee-icon i {
+.guarantee-icon i {
     font-size: 0.9rem;
 }
 
-.quicksignage-landing .guarantee-text strong {
+.guarantee-text strong {
     font-size: 0.85rem;
     display: block;
     margin-bottom: 0.2rem;
 }
 
-.quicksignage-landing .guarantee-text small {
+.guarantee-text small {
     opacity: 0.9;
     font-size: 0.7rem;
 }
 
 /* Hero Section */
-.quicksignage-landing .hero-section {
+.hero-section {
     background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
     color: var(--white);
     position: relative;
@@ -316,7 +314,7 @@ html {
     margin-bottom: 0;
 }
 
-.quicksignage-landing .hero-overlay {
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -326,13 +324,13 @@ html {
     opacity: 0.3;
 }
 
-.quicksignage-landing .hero-content {
+.hero-content {
     position: relative;
     z-index: 2;
     padding-top: 2rem;
 }
 
-.quicksignage-landing .badge-professional {
+.badge-professional {
     background: rgba(0, 184, 148, 0.2);
     color: var(--primary-color);
     padding: 0.75rem 1.5rem;
@@ -343,7 +341,7 @@ html {
     animation: fadeInUp 0.6s ease-out;
 }
 
-.quicksignage-landing .hero-title {
+.hero-title {
     font-size: 3.5rem;
     font-weight: 800;
     line-height: 1.2;
@@ -351,7 +349,7 @@ html {
     animation: fadeInUp 0.6s ease-out 0.2s both;
 }
 
-.quicksignage-landing .hero-subtitle {
+.hero-subtitle {
     font-size: 1.25rem;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 2rem;
@@ -359,7 +357,7 @@ html {
     animation: fadeInUp 0.6s ease-out 0.4s both;
 }
 
-.quicksignage-landing .hero-stats {
+.hero-stats {
     margin: 2rem 0;
     padding: 2rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -367,55 +365,55 @@ html {
     animation: fadeInUp 0.6s ease-out 0.6s both;
 }
 
-.quicksignage-landing .stat-card {
+.stat-card {
     text-align: center;
 }
 
-.quicksignage-landing .stat-number {
+.stat-number {
     font-size: 2.5rem;
     font-weight: 800;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
 
-.quicksignage-landing .stat-label {
+.stat-label {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 500;
     margin: 0;
 }
 
-.quicksignage-landing .hero-cta {
+.hero-cta {
     margin: 2rem 0;
     animation: fadeInUp 0.6s ease-out 0.8s both;
 }
 
-.quicksignage-landing .trust-indicators {
+.trust-indicators {
     margin-top: 2rem;
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     animation: fadeInUp 0.6s ease-out 1s both;
 }
 
-.quicksignage-landing .trust-item {
+.trust-item {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
     color: rgba(255, 255, 255, 0.9);
 }
 
-.quicksignage-landing .trust-item i {
+.trust-item i {
     margin-right: 0.75rem;
     font-size: 1.25rem;
 }
 
 /* Hero Form */
-.quicksignage-landing .hero-form-container {
+.hero-form-container {
     position: relative;
     z-index: 2;
     animation: fadeInRight 0.8s ease-out 0.4s both;
 }
 
-.quicksignage-landing .hero-form-card {
+.hero-form-card {
     background: var(--white);
     border-radius: 20px;
     padding: 2rem;
@@ -424,25 +422,25 @@ html {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.quicksignage-landing .form-header {
+.form-header {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.quicksignage-landing .form-header h3 {
+.form-header h3 {
     color: var(--dark-color);
     font-weight: 700;
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
 }
 
-.quicksignage-landing .form-header p {
+.form-header p {
     color: var(--text-muted);
     margin: 0;
 }
 
-.quicksignage-landing .hero-quote-form .form-control,
-.quicksignage-landing .hero-quote-form .form-select {
+.hero-quote-form .form-control,
+.hero-quote-form .form-select {
     border-radius: 10px;
     border: 2px solid var(--border-color);
     padding: 0.75rem 1rem;
@@ -450,20 +448,20 @@ html {
     font-size: 0.95rem;
 }
 
-.quicksignage-landing .hero-quote-form .form-control:focus,
-.quicksignage-landing .hero-quote-form .form-select:focus {
+.hero-quote-form .form-control:focus,
+.hero-quote-form .form-select:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 0.2rem rgba(0, 184, 148, 0.25);
 }
 
-.quicksignage-landing .hero-quote-form .form-label {
+.hero-quote-form .form-label {
     font-weight: 600;
     color: var(--dark-color);
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
 }
 
-.quicksignage-landing .submit-btn {
+.submit-btn {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -471,25 +469,25 @@ html {
     font-size: 1rem;
 }
 
-.quicksignage-landing .form-guarantee {
+.form-guarantee {
     text-align: center;
     margin-top: 1rem;
     color: var(--text-muted);
     font-size: 0.85rem;
 }
 
-.quicksignage-landing .form-guarantee i {
+.form-guarantee i {
     color: var(--primary-color);
 }
 
 /* Value Proposition Section */
-.quicksignage-landing .value-prop-section {
+.value-prop-section {
     padding: 5rem 0;
     background: var(--light-color);
     margin-top: 0;
 }
 
-.quicksignage-landing .step-card {
+.step-card {
     text-align: center;
     padding: 2rem;
     background: var(--white);
@@ -502,12 +500,12 @@ html {
     transform: translateY(0);
 }
 
-.quicksignage-landing .step-card:hover {
+.step-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
 
-.quicksignage-landing .step-number {
+.step-number {
     position: absolute;
     top: -15px;
     left: 50%;
@@ -524,7 +522,7 @@ html {
     font-size: 1.25rem;
 }
 
-.quicksignage-landing .step-icon {
+.step-icon {
     width: 80px;
     height: 80px;
     background: linear-gradient(135deg, rgba(0, 184, 148, 0.1), rgba(9, 132, 227, 0.1));
@@ -537,24 +535,24 @@ html {
     font-size: 2rem;
 }
 
-.quicksignage-landing .step-card h4 {
+.step-card h4 {
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--dark-color);
 }
 
-.quicksignage-landing .step-card p {
+.step-card p {
     color: var(--text-muted);
     line-height: 1.6;
 }
 
 /* Sign Types Section */
-.quicksignage-landing .sign-types-section {
+.sign-types-section {
     padding: 5rem 0;
     background: var(--white);
 }
 
-.quicksignage-landing .sign-type-card {
+.sign-type-card {
     background: var(--white);
     border-radius: 20px;
     overflow: hidden;
@@ -565,29 +563,29 @@ html {
     transform: translateY(0);
 }
 
-.quicksignage-landing .sign-type-card:hover {
+.sign-type-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
 
-.quicksignage-landing .sign-image {
+.sign-image {
     position: relative;
     overflow: hidden;
     height: 250px;
 }
 
-.quicksignage-landing .sign-image img {
+.sign-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.quicksignage-landing .sign-type-card:hover .sign-image img {
+.sign-type-card:hover .sign-image img {
     transform: scale(1.05);
 }
 
-.quicksignage-landing .sign-overlay {
+.sign-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -601,33 +599,33 @@ html {
     transition: opacity 0.2s ease;
 }
 
-.quicksignage-landing .sign-type-card:hover .sign-overlay {
+.sign-type-card:hover .sign-overlay {
     opacity: 1;
 }
 
-.quicksignage-landing .sign-content {
+.sign-content {
     padding: 1.5rem;
 }
 
-.quicksignage-landing .sign-content h5 {
+.sign-content h5 {
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--dark-color);
 }
 
-.quicksignage-landing .sign-content p {
+.sign-content p {
     color: var(--text-muted);
     margin-bottom: 1rem;
     line-height: 1.6;
 }
 
-.quicksignage-landing .sign-features {
+.sign-features {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-.quicksignage-landing .feature-tag {
+.feature-tag {
     background: rgba(0, 184, 148, 0.1);
     color: var(--primary-color);
     padding: 0.25rem 0.75rem;
@@ -637,19 +635,19 @@ html {
 }
 
 /* Portfolio Section */
-.quicksignage-landing .portfolio-section {
+.portfolio-section {
     padding: 5rem 0;
     background: var(--light-color);
 }
 
-.quicksignage-landing .portfolio-grid {
+.portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
 }
 
-.quicksignage-landing .portfolio-item {
+.portfolio-item {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -660,23 +658,23 @@ html {
     transform: translateY(0);
 }
 
-.quicksignage-landing .portfolio-item:hover {
+.portfolio-item:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
 
-.quicksignage-landing .portfolio-item img {
+.portfolio-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.quicksignage-landing .portfolio-item:hover img {
+.portfolio-item:hover img {
     transform: scale(1.05);
 }
 
-.quicksignage-landing .portfolio-overlay {
+.portfolio-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -688,26 +686,26 @@ html {
     transition: transform 0.2s ease;
 }
 
-.quicksignage-landing .portfolio-item:hover .portfolio-overlay {
+.portfolio-item:hover .portfolio-overlay {
     transform: translateY(0);
 }
 
-.quicksignage-landing .portfolio-overlay h5 {
+.portfolio-overlay h5 {
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
-.quicksignage-landing .portfolio-overlay p {
+.portfolio-overlay p {
     margin: 0;
     opacity: 0.9;
 }
 
 /* Testimonials Section */
-.quicksignage-landing .testimonials-section {
+.testimonials-section {
     position: relative;
 }
 
-.quicksignage-landing .testimonial-card {
+.testimonial-card {
     background: var(--white);
     border-radius: 20px;
     overflow: hidden;
@@ -717,39 +715,39 @@ html {
     border: 1px solid var(--border-color);
 }
 
-.quicksignage-landing .testimonial-card:hover {
+.testimonial-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
 
-.quicksignage-landing .testimonial-image {
+.testimonial-image {
     position: relative;
     height: 200px;
     overflow: hidden;
 }
 
-.quicksignage-landing .testimonial-image img {
+.testimonial-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.quicksignage-landing .testimonial-card:hover .testimonial-image img {
+.testimonial-card:hover .testimonial-image img {
     transform: scale(1.05);
 }
 
-.quicksignage-landing .testimonial-content {
+.testimonial-content {
     padding: 1.5rem;
 }
 
-.quicksignage-landing .testimonial-content .stars {
+.testimonial-content .stars {
     color: #ffd700;
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
-.quicksignage-landing .testimonial-content h5 {
+.testimonial-content h5 {
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--dark-color);
@@ -758,7 +756,7 @@ html {
     gap: 0.5rem;
 }
 
-.quicksignage-landing .verified {
+.verified {
     background: var(--primary-color);
     color: white;
     padding: 0.2rem 0.5rem;
@@ -767,21 +765,21 @@ html {
     font-weight: 500;
 }
 
-.quicksignage-landing .testimonial-content p {
+.testimonial-content p {
     color: var(--text-muted);
     line-height: 1.6;
     margin-bottom: 1rem;
     font-style: italic;
 }
 
-.quicksignage-landing .date {
+.date {
     color: var(--text-muted);
     font-size: 0.85rem;
     display: block;
     margin-bottom: 0.5rem;
 }
 
-.quicksignage-landing .product-mention {
+.product-mention {
     background: rgba(0, 184, 148, 0.1);
     color: var(--primary-color);
     padding: 0.4rem 0.8rem;
@@ -791,21 +789,21 @@ html {
     display: inline-block;
 }
 
-.quicksignage-landing .rating-summary {
+.rating-summary {
     margin-bottom: 2rem;
 }
 
-.quicksignage-landing .stars-large {
+.stars-large {
     text-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 /* Why Us Section */
-.quicksignage-landing .why-us-section {
+.why-us-section {
     padding: 5rem 0;
     background: var(--white);
 }
 
-.quicksignage-landing .benefit-card {
+.benefit-card {
     text-align: center;
     padding: 2rem;
     background: var(--white);
@@ -818,13 +816,13 @@ html {
     transform: translateY(0);
 }
 
-.quicksignage-landing .benefit-card:hover {
+.benefit-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
     border-color: var(--primary-color);
 }
 
-.quicksignage-landing .benefit-icon {
+.benefit-icon {
     width: 80px;
     height: 80px;
     background: var(--gradient);
@@ -837,79 +835,79 @@ html {
     font-size: 2rem;
 }
 
-.quicksignage-landing .benefit-card h5 {
+.benefit-card h5 {
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--dark-color);
 }
 
-.quicksignage-landing .benefit-card p {
+.benefit-card p {
     color: var(--text-muted);
     line-height: 1.6;
     margin: 0;
 }
 
 /* CTA Section */
-.quicksignage-landing .cta-section {
+.cta-section {
     padding: 5rem 0;
     background: var(--gradient);
     color: var(--white);
 }
 
-.quicksignage-landing .cta-title {
+.cta-title {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.quicksignage-landing .cta-subtitle {
+.cta-subtitle {
     font-size: 1.25rem;
     opacity: 0.9;
     margin: 0;
 }
 
 /* Footer */
-.quicksignage-landing .footer {
+.footer {
     background: var(--dark-color);
     color: var(--white);
     padding: 3rem 0 1rem;
 }
 
-.quicksignage-landing .footer-text {
+.footer-text {
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
 }
 
-.quicksignage-landing .footer-title {
+.footer-title {
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--white);
 }
 
-.quicksignage-landing .footer-links {
+.footer-links {
     list-style: none;
     padding: 0;
 }
 
-.quicksignage-landing .footer-links li {
+.footer-links li {
     margin-bottom: 0.5rem;
 }
 
-.quicksignage-landing .footer-links a {
+.footer-links a {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-.quicksignage-landing .footer-links a:hover {
+.footer-links a:hover {
     color: var(--primary-color);
 }
 
-.quicksignage-landing .social-links {
+.social-links {
     margin-top: 1rem;
 }
 
-.quicksignage-landing .social-links a {
+.social-links a {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -922,17 +920,17 @@ html {
     transition: all 0.2s ease;
 }
 
-.quicksignage-landing .social-links a:hover {
+.social-links a:hover {
     background: var(--primary-color);
     transform: translateY(-2px);
 }
 
-.quicksignage-landing .footer-divider {
+.footer-divider {
     border-color: rgba(255, 255, 255, 0.1);
     margin: 2rem 0 1rem;
 }
 
-.quicksignage-landing .copyright {
+.copyright {
     color: rgba(255, 255, 255, 0.6);
     margin: 0;
 }
@@ -960,73 +958,73 @@ html {
     }
 }
 
-.quicksignage-landing .fade-in-up {
+.fade-in-up {
     animation: fadeInUp 0.6s ease-out;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .quicksignage-landing .hero-title {
+    .hero-title {
         font-size: 2.5rem;
     }
     
-    .quicksignage-landing .section-title {
+    .section-title {
         font-size: 2rem;
     }
     
-    .quicksignage-landing .hero-cta .btn {
+    .hero-cta .btn {
         width: 100%;
         margin-bottom: 1rem;
     }
     
-    .quicksignage-landing .portfolio-grid {
+    .portfolio-grid {
         grid-template-columns: 1fr;
     }
     
-    .quicksignage-landing .hero-content {
+    .hero-content {
         padding-top: 1rem;
         margin-bottom: 3rem;
     }
     
-    .quicksignage-landing .hero-form-card {
+    .hero-form-card {
         padding: 1.5rem;
     }
     
-    .quicksignage-landing .form-header h3 {
+    .form-header h3 {
         font-size: 1.25rem;
     }
     
-    .quicksignage-landing .modal-body {
+    .modal-body {
         padding: 1rem 1.5rem 2rem;
     }
     
-    .quicksignage-landing .modal-header {
+    .modal-header {
         padding: 1.5rem 1.5rem 1rem;
     }
     
-    .quicksignage-landing .modal-benefits {
+    .modal-benefits {
         margin-top: 2rem;
         padding: 1.5rem;
     }
     
-    .quicksignage-landing .benefit-item {
+    .benefit-item {
         padding: 0.75rem;
         margin-bottom: 1rem;
     }
     
-    .quicksignage-landing .guarantee-badge {
+    .guarantee-badge {
         padding: 1rem;
     }
     
-    .quicksignage-landing .testimonial-image {
+    .testimonial-image {
         height: 150px;
     }
     
-    .quicksignage-landing .testimonial-content {
+    .testimonial-content {
         padding: 1rem;
     }
     
-    .quicksignage-landing .testimonial-content h5 {
+    .testimonial-content h5 {
         font-size: 1rem;
         flex-direction: column;
         align-items: flex-start;
@@ -1035,79 +1033,79 @@ html {
 }
 
 @media (max-width: 576px) {
-    .quicksignage-landing .hero-title {
+    .hero-title {
         font-size: 2rem;
     }
     
-    .quicksignage-landing .stat-number {
+    .stat-number {
         font-size: 2rem;
     }
     
-    .quicksignage-landing .trust-item {
+    .trust-item {
         flex-direction: column;
         text-align: center;
     }
     
-    .quicksignage-landing .trust-item i {
+    .trust-item i {
         margin-bottom: 0.5rem;
         margin-right: 0;
     }
     
-    .quicksignage-landing .hero-form-card {
+    .hero-form-card {
         padding: 1rem;
     }
     
-    .quicksignage-landing .modal-body {
+    .modal-body {
         padding: 1rem;
     }
     
-    .quicksignage-landing .modal-header {
+    .modal-header {
         padding: 1rem;
     }
     
-    .quicksignage-landing .modal-benefits {
+    .modal-benefits {
         padding: 1rem;
     }
     
-    .quicksignage-landing .benefit-item {
+    .benefit-item {
         flex-direction: column;
         text-align: center;
         padding: 1rem;
     }
     
-    .quicksignage-landing .benefit-item .benefit-icon {
+    .benefit-item .benefit-icon {
         margin-right: 0;
         margin-bottom: 0.75rem;
     }
     
-    .quicksignage-landing .guarantee-badge {
+    .guarantee-badge {
         flex-direction: column;
         text-align: center;
         padding: 1rem;
     }
     
-    .quicksignage-landing .guarantee-icon {
+    .guarantee-icon {
         margin-right: 0;
         margin-bottom: 0.75rem;
     }
 }
 
 /* Loading states */
-.quicksignage-landing .btn:disabled {
+.btn:disabled {
     opacity: 0.6;
     cursor: not-allowed;
 }
 
 /* Focus states for accessibility */
-.quicksignage-landing .btn:focus,
-.quicksignage-landing .form-control:focus,
-.quicksignage-landing .form-select:focus {
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
     outline: none;
 }
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {
-    .quicksignage-landing .btn-primary {
+    .btn-primary {
         background: #000;
         border-color: #000;
     }
@@ -1115,9 +1113,9 @@ html {
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
-    .quicksignage-landing *,
-    .quicksignage-landing *::before,
-    .quicksignage-landing *::after {
+    *,
+    *::before,
+    *::after {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
@@ -1129,10 +1127,10 @@ html {
 }
 
 /* Ensure content is always visible */
-.quicksignage-landing .step-card,
-.quicksignage-landing .sign-type-card,
-.quicksignage-landing .portfolio-item,
-.quicksignage-landing .benefit-card {
+.step-card,
+.sign-type-card,
+.portfolio-item,
+.benefit-card {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
