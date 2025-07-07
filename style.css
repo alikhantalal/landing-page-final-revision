@@ -313,7 +313,7 @@ html {
     display: flex;
     align-items: center;
     padding-top: var(--navbar-height);
-    margin-bottom: 0; /* Remove any margin */
+    margin-bottom: 0;
 }
 
 .quicksignage-landing .hero-overlay {
@@ -486,7 +486,7 @@ html {
 .quicksignage-landing .value-prop-section {
     padding: 5rem 0;
     background: var(--light-color);
-    margin-top: 0; /* Remove any margin */
+    margin-top: 0;
 }
 
 .quicksignage-landing .step-card {
@@ -498,7 +498,6 @@ html {
     transition: all 0.2s ease;
     position: relative;
     height: 100%;
-    /* Remove animation properties that might cause issues */
     opacity: 1;
     transform: translateY(0);
 }
@@ -562,7 +561,6 @@ html {
     box-shadow: var(--shadow);
     transition: all 0.2s ease;
     height: 100%;
-    /* Remove animation properties that might cause issues */
     opacity: 1;
     transform: translateY(0);
 }
@@ -658,7 +656,6 @@ html {
     box-shadow: var(--shadow);
     transition: all 0.2s ease;
     height: 250px;
-    /* Remove animation properties that might cause issues */
     opacity: 1;
     transform: translateY(0);
 }
@@ -817,7 +814,6 @@ html {
     transition: all 0.2s ease;
     height: 100%;
     border: 1px solid var(--border-color);
-    /* Remove animation properties that might cause issues */
     opacity: 1;
     transform: translateY(0);
 }
